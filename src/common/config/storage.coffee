@@ -1,4 +1,4 @@
-angular.module 'boilerplate.utils'
+angular.module 'common'
 .value 'storage', {}
 
 .run ($rootScope, storage) ->

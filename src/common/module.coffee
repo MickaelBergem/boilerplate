@@ -1,4 +1,4 @@
-angular.module 'boilerplate.utils', [
+angular.module 'common', [
   'ng'
   'ui.router'
   'pascalprecht.translate'
