@@ -4,8 +4,9 @@
   "scripts": {
     "postinstall": "bower install && gulp build",
     "start": "gulp watch",
-    "test": "karma start test/karma-unit.coffee --single-run",
-    "test:unit": "karma start test/karma-unit.coffee",
+    "test": "npm run test:unit && npm run test:functional",
+    "test:unit": "karma start test/karma-unit.coffee --single-run",
+    "test:watch": "karma start test/karma-unit.coffee",
     "test:functional": "webdriver-manager update && protractor --require coffee-script/register test/protractor.conf.coffee"
   },
   "dependencies": {
