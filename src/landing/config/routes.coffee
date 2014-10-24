@@ -4,3 +4,13 @@ angular.module 'boilerplate.landing'
   .state 'landing',
     url: '/'
     templateUrl: 'landing/views/view.html'
+
+  [
+    'one'
+    'two'
+    'three'
+  ].forEach (state) ->
+    $stateProvider
+    .state state,
+      url: "/#{state}"
+      templateUrl: "landing/views/#{state}.html"
